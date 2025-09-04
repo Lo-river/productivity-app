@@ -123,9 +123,8 @@ header #login:hover .icon-img {
   background-image: url("../images/navbar/form-hover-yellow.svg");
 }
 
-.bottom-nav #habits.active .icon-img,
 .bottom-nav #habits:hover .icon-img {
-  background-image: url("../images/navbar/form-hover-yellow.svg");
+  background-image: url("../images/navbar/fitness-hover-yellow.svg");
 }
 
 .bottom-nav #events:hover .icon-img {
