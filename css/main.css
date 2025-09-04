@@ -125,7 +125,7 @@ header #login:hover .icon-img {
 
 .bottom-nav #habits.active .icon-img,
 .bottom-nav #habits:hover .icon-img {
-  background-image: url("../images/navbar/fitness-hover-yellow.svg");
+  background-image: url("images/fitness-hover-yellow.svg");
 }
 
 .bottom-nav #events:hover .icon-img {
