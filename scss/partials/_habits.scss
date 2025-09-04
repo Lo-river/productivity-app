@@ -108,13 +108,13 @@
   height: 24px;
   border-radius: 50%;
   display: inline-block;
-  background: url('/images/iconunchecked.svg') no-repeat center;
+  background: url('../images/iconunchecked.svg') no-repeat center;
   background-size: contain;
   transition: background 0.3s ease-in-out;
 }
 
 .habit-filter-menu input:checked + .hcheckmark {
-  background: url('/images/iconchecked.svg') no-repeat center;
+  background: url('../images/iconchecked.svg') no-repeat center;
   background-size: contain;
 }
 
@@ -303,7 +303,7 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-image: url("/images/cta-button.svg");
+    background-image: url("../images/cta-button.svg");
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
@@ -314,7 +314,7 @@
     cursor: pointer;
   }
   .bottom-nav .cta-button:hover {
-    background-image: url("/images/cta-button-hover.svg");
+    background-image: url("../images/cta-button-hover.svg");
   }
 
 
@@ -392,7 +392,7 @@ option {
 
 
 .delete-btn, .delete-svg {
-  background-image: url("/images/trash.svg");
+  background-image: url("../images/trash.svg");
   height: 20px;
   width: 20px;
   border: none;
@@ -402,12 +402,12 @@ option {
   background-position: center;
 }
 .delete-btn:hover {
-  background-image: url("/images/trash-hover-yellow.svg") !important;
+  background-image: url("../images/trash-hover-yellow.svg") !important;
    background-color: transparent !important;
   color: #FFBC2C !important;
 }
 .edit-btn, .edit-svg {
-  background-image: url("/images/edit-button.svg");
+  background-image: url("../images/edit-button.svg");
   height: 20px;
   width: 20px; 
   border: none;
@@ -417,7 +417,7 @@ option {
   background-position: center;
 }
 .edit-btn:hover {
-  background-image: url("/images/edit-button-hover-yellow.svg") !important;
+  background-image: url("../images/edit-button-hover-yellow.svg") !important;
   background-color: transparent !important;
   color: #FFBC2C !important;
 }
@@ -650,23 +650,23 @@ option {
 }
 
 .habit-card .delete-btn {
-  background-image: url("/images/trash.svg");
+  background-image: url("../images/trash.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .habit-card .delete-btn:hover {
-  background-image: url("/images/trash-hover-yellow.svg");
+  background-image: url("../images/trash-hover-yellow.svg");
 }
 
 .habit-card .edit-btn {
-  background-image: url("/images/edit-button.svg");
+  background-image: url("../images/edit-button.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .habit-card .edit-btn:hover {
-  background-image: url("/images/edit-button-hover-yellow.svg");
+  background-image: url("../images/edit-button-hover-yellow.svg");
 }
 
 .habit-icon img {
@@ -738,22 +738,22 @@ option {
   // padding: 10px !important;
 }
 #add-repetition {
-  background-image: url("/images/habits/habit-add.svg");
+  background-image: url("../images/habits/habit-add.svg");
 }
 #add-repetition:hover {
-  background-image: url("/images/habits/habit-add-hover-yellow.svg");
+  background-image: url("../images/habits/habit-add-hover-yellow.svg");
 }
 #sub-repetition {
-  background-image: url("/images/habits/habit-subtrac.svg");
+  background-image: url("../images/habits/habit-subtrac.svg");
 }
 #sub-repetition:hover {
-  background-image: url("/images/habits/habit-subtrac-hover-yellow.svg");
+  background-image: url("../images/habits/habit-subtrac-hover-yellow.svg");
 }
 #reset-repetition {
-  background-image: url("/images/habits/habit-reset.svg");
+  background-image: url("../images/habits/habit-reset.svg");
 }
 #reset-repetition:hover {
-  background-image: url("/images/habits/habit-reset-hover-yellow.svg");
+  background-image: url("../images/habits/habit-reset-hover-yellow.svg");
 }
 
 #habit-repetition-display{

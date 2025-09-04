@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index - Productivity Assistant Application</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="/js/index.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script>
+        (function () {
+          const base = document.createElement('base');
+          base.href = location.hostname.includes('github.io') ? '/productivity-app/' : '/';
+          document.head.insertBefore(base, document.head.firstChild);
+        })();
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/index.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <div class="wrap-container">
         <main> 
             <header id="index">
                 <div id="logo-container">
-                <img src="/images/logo-index.svg" alt="logo" id="logo-index" />
+                <img src="images/logo-index.svg" alt="logo" id="logo-index" />
                 </div>
             </header>
 
@@ -23,7 +30,7 @@
 
                 <h1 id="h1-index">Groundly</h1>
                 <h2 id="h2-index">Grow your habits, focus and flow</h2>
-                <a href="/html/login.html" id="start">Start</a>
+                <a href="html/login.html" id="start">Start</a>
         </div>
    
         </main>

@@ -348,16 +348,16 @@ option {
  }
  /* .edit-btn .edit-svg */
  .edit-btn, .edit-svg {
-   background-image: url("/images/edit-button.svg");
+   background-image: url("../images/edit-button.svg");
  }
  /* .edit-btn .edit-svg:hover  */
  .edit-btn:hover  {
-   background-image: url("/images/edit-button-hover-yellow.svg");
+   background-image: url("../images/edit-button-hover-yellow.svg");
    color: #FFBC2C !important;
  }
  /* .delete-btn .delete-svg */
  .delete-btn, .delete-svg {
-   background-image: url("/images/trash.svg");
+   background-image: url("../images/trash.svg");
    height: 20px;
    width: 20px;
    border: none;
@@ -365,7 +365,7 @@ option {
  }
  /* .delete-btn .delete-svg:hover  */
  .delete-btn:hover {
-   background-image: url("/images/trash-hover-yellow.svg");
+   background-image: url("../images/trash-hover-yellow.svg");
    color: #FFBC2C !important;
  }
  
@@ -449,15 +449,15 @@ option {
  }
  
  .checkbox-input:checked + .checkbox-icon {
- background-image: url('/images/iconchecked.svg');  
+ background-image: url('../images/iconchecked.svg');  
  }
  
  .checkbox-input:not(:checked) + .checkbox-icon {
-  background-image: url("/images/iconunchecked.svg"); 
+  background-image: url("../images/iconunchecked.svg"); 
  } 
   
  .completed .checkbox-input + .checkbox-icon {
- background-image: url("/images/iconchecked.svg"); 
+ background-image: url("../images/iconchecked.svg"); 
  }
  
  .completed span {
@@ -555,7 +555,7 @@ option {
    border-radius: 50%;
    width: 60px;
    height: 60px;
-   background-image: url("/images/cta-button.svg");
+   background-image: url("../images/cta-button.svg");
    background-size: cover;
    background-repeat: no-repeat;
    border: none;
@@ -566,7 +566,7 @@ option {
    cursor: pointer;
  }
  .cta-button:hover {
-   background-image: url("/images/cta-button-hover.svg");
+   background-image: url("../images/cta-button-hover.svg");
  }
  }
  

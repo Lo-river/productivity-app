@@ -54,11 +54,11 @@ header #login .icon-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/images/login.svg");
+  background-image: url("../images/login.svg");
 }
 
 header #login:hover .icon-img {
-  background-image: url("/images/login-hover-yellow.svg");
+  background-image: url("../images/login-hover-yellow.svg");
 }
 
 .bottom-nav {
@@ -99,36 +99,36 @@ header #login:hover .icon-img {
 
 /* Gråa (inaktiva) ikoner */
 .bottom-nav #home .icon-img {
-  background-image: url("/images/navbar/home.svg");
+  background-image: url("../images/navbar/home.svg");
 }
 
 .bottom-nav #tasks .icon-img {
-  background-image: url("/images/navbar/form.svg");
+  background-image: url("../images/navbar/form.svg");
 }
 
 .bottom-nav #habits .icon-img {
-  background-image: url("/images/navbar/fitness.svg");
+  background-image: url("../images/navbar/fitness.svg");
 }
 
 .bottom-nav #events .icon-img {
-  background-image: url("/images/navbar/calender.svg");
+  background-image: url("../images/navbar/calender.svg");
 }
 
 /* Hover - byter till gula ikoner */
 .bottom-nav #home:hover .icon-img {
-  background-image: url("/images/navbar/home-hover-yellow.svg");
+  background-image: url("../images/navbar/home-hover-yellow.svg");
 }
 
 .bottom-nav #tasks:hover .icon-img {
-  background-image: url("/images/navbar/form-hover-yellow.svg");
+  background-image: url("../images/navbar/form-hover-yellow.svg");
 }
 
 .bottom-nav #habits:hover .icon-img {
-  background-image: url("/images/navbar/fitness-hover-yellow.svg");
+  background-image: url("../images/navbar/fitness-hover-yellow.svg");
 }
 
 .bottom-nav #events:hover .icon-img {
-  background-image: url("/images/navbar/calender-hover-yellow.svg");
+  background-image: url("../images/navbar/calender-hover-yellow.svg");
 }
 
 .bottom-nav .cta-button {
@@ -137,7 +137,7 @@ header #login:hover .icon-img {
   width: 60px;
   height: 60px;
   margin-top: 20px;
-  background-image: url("/images/cta-button.svg");
+  background-image: url("../images/cta-button.svg");
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
@@ -149,7 +149,7 @@ header #login:hover .icon-img {
 }
 
 .bottom-nav .cta-button:hover {
-  background-image: url("/images/cta-button-hover.svg");
+  background-image: url("../images/cta-button-hover.svg");
 }
 
 #events-body {
@@ -289,13 +289,13 @@ h1 {
   height: 24px;
   border-radius: 50%;
   display: inline-block;
-  background: url("/images/iconunchecked.svg") no-repeat center;
+  background: url("../images/iconunchecked.svg") no-repeat center;
   background-size: contain;
   transition: background 0.3s ease-in-out;
 }
 
 .filter-menu input:checked + .checkmark {
-  background: url("/images/iconchecked.svg") no-repeat center;
+  background: url("../images/iconchecked.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -608,13 +608,13 @@ h1 {
   height: 24px;
   border-radius: 50%;
   display: inline-block;
-  background: url("/images/iconunchecked.svg") no-repeat center;
+  background: url("../images/iconunchecked.svg") no-repeat center;
   background-size: contain;
   transition: background 0.3s ease-in-out;
 }
 
 .habit-filter-menu input:checked + .hcheckmark, .habit-sort-menu input:checked + .hcheckmark {
-  background: url("/images/iconchecked.svg") no-repeat center;
+  background: url("../images/iconchecked.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -760,7 +760,7 @@ h1 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-image: url("/images/cta-button.svg");
+  background-image: url("../images/cta-button.svg");
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
@@ -772,7 +772,7 @@ h1 {
 }
 
 .bottom-nav .cta-button:hover {
-  background-image: url("/images/cta-button-hover.svg");
+  background-image: url("../images/cta-button-hover.svg");
 }
 
 .habit-actions {
@@ -838,7 +838,7 @@ option {
 }
 
 .delete-btn, .delete-svg {
-  background-image: url("/images/trash.svg");
+  background-image: url("../images/trash.svg");
   height: 20px;
   width: 20px;
   border: none;
@@ -849,13 +849,13 @@ option {
 }
 
 .delete-btn:hover {
-  background-image: url("/images/trash-hover-yellow.svg") !important;
+  background-image: url("../images/trash-hover-yellow.svg") !important;
   background-color: transparent !important;
   color: #FFBC2C !important;
 }
 
 .edit-btn, .edit-svg {
-  background-image: url("/images/edit-button.svg");
+  background-image: url("../images/edit-button.svg");
   height: 20px;
   width: 20px;
   border: none;
@@ -866,7 +866,7 @@ option {
 }
 
 .edit-btn:hover {
-  background-image: url("/images/edit-button-hover-yellow.svg") !important;
+  background-image: url("../images/edit-button-hover-yellow.svg") !important;
   background-color: transparent !important;
   color: #FFBC2C !important;
 }
@@ -1051,23 +1051,23 @@ option {
 }
 
 .habit-card .delete-btn {
-  background-image: url("/images/trash.svg");
+  background-image: url("../images/trash.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .habit-card .delete-btn:hover {
-  background-image: url("/images/trash-hover-yellow.svg");
+  background-image: url("../images/trash-hover-yellow.svg");
 }
 
 .habit-card .edit-btn {
-  background-image: url("/images/edit-button.svg");
+  background-image: url("../images/edit-button.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .habit-card .edit-btn:hover {
-  background-image: url("/images/edit-button-hover-yellow.svg");
+  background-image: url("../images/edit-button-hover-yellow.svg");
 }
 
 .habit-icon img {
@@ -1126,27 +1126,27 @@ option {
 }
 
 #add-repetition {
-  background-image: url("/images/habits/habit-add.svg");
+  background-image: url("../images/habits/habit-add.svg");
 }
 
 #add-repetition:hover {
-  background-image: url("/images/habits/habit-add-hover-yellow.svg");
+  background-image: url("../images/habits/habit-add-hover-yellow.svg");
 }
 
 #sub-repetition {
-  background-image: url("/images/habits/habit-subtrac.svg");
+  background-image: url("../images/habits/habit-subtrac.svg");
 }
 
 #sub-repetition:hover {
-  background-image: url("/images/habits/habit-subtrac-hover-yellow.svg");
+  background-image: url("../images/habits/habit-subtrac-hover-yellow.svg");
 }
 
 #reset-repetition {
-  background-image: url("/images/habits/habit-reset.svg");
+  background-image: url("../images/habits/habit-reset.svg");
 }
 
 #reset-repetition:hover {
-  background-image: url("/images/habits/habit-reset-hover-yellow.svg");
+  background-image: url("../images/habits/habit-reset-hover-yellow.svg");
 }
 
 #habit-repetition-display {
@@ -1716,18 +1716,18 @@ span.delete-btn .edit-btn {
 
 /* .edit-btn .edit-svg */
 .edit-btn, .edit-svg {
-  background-image: url("/images/edit-button.svg");
+  background-image: url("../images/edit-button.svg");
 }
 
 /* .edit-btn .edit-svg:hover  */
 .edit-btn:hover {
-  background-image: url("/images/edit-button-hover-yellow.svg");
+  background-image: url("../images/edit-button-hover-yellow.svg");
   color: #FFBC2C !important;
 }
 
 /* .delete-btn .delete-svg */
 .delete-btn, .delete-svg {
-  background-image: url("/images/trash.svg");
+  background-image: url("../images/trash.svg");
   height: 20px;
   width: 20px;
   border: none;
@@ -1736,7 +1736,7 @@ span.delete-btn .edit-btn {
 
 /* .delete-btn .delete-svg:hover  */
 .delete-btn:hover {
-  background-image: url("/images/trash-hover-yellow.svg");
+  background-image: url("../images/trash-hover-yellow.svg");
   color: #FFBC2C !important;
 }
 
@@ -1814,15 +1814,15 @@ span.delete-btn .edit-btn {
 }
 
 .checkbox-input:checked + .checkbox-icon {
-  background-image: url("/images/iconchecked.svg");
+  background-image: url("../images/iconchecked.svg");
 }
 
 .checkbox-input:not(:checked) + .checkbox-icon {
-  background-image: url("/images/iconunchecked.svg");
+  background-image: url("../images/iconunchecked.svg");
 }
 
 .completed .checkbox-input + .checkbox-icon {
-  background-image: url("/images/iconchecked.svg");
+  background-image: url("../images/iconchecked.svg");
 }
 
 .completed span {
@@ -1909,7 +1909,7 @@ h2[contenteditable], h3[contenteditable], p[contenteditable] {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-image: url("/images/cta-button.svg");
+  background-image: url("../images/cta-button.svg");
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
@@ -1920,7 +1920,7 @@ h2[contenteditable], h3[contenteditable], p[contenteditable] {
   cursor: pointer;
 }
 .bottom-nav .cta-button:hover {
-  background-image: url("/images/cta-button-hover.svg");
+  background-image: url("../images/cta-button-hover.svg");
 }
 
 #todo.edit-task .controls {

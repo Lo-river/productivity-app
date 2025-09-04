@@ -26,11 +26,11 @@ header #login .icon-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/images/login.svg");
+  background-image: url("../images/login.svg");
 }
 
 header #login:hover .icon-img {
-  background-image: url("/images/login-hover-yellow.svg");
+  background-image: url("../images/login-hover-yellow.svg");
 }
 
 // ändrar placering på login

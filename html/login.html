@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Productivity Assistant Application</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="/js/login.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script>
+        (function () {
+          const base = document.createElement('base');
+          base.href = location.hostname.includes('github.io') ? '/productivity-app/' : '/';
+          document.head.insertBefore(base, document.head.firstChild);
+        })();
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/login.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
@@ -14,7 +21,7 @@
       <main> 
           <header id="login-header">
               <div id="login-container">
-              <img src="/images/logo-index.svg" alt="logo" id="logo-login" />
+              <img src="images/logo-index.svg" alt="logo" id="logo-login" />
               </div>
           </header>
 
@@ -22,7 +29,7 @@
           
          <div class="login-container">
               <h1 id="h1-login">“Let’s Make Life Easier Together”</h1>
-              <a href="/html/home.html" id="login-btn">Sign in</a>
+              <a href="html/home.html" id="login-btn">Sign in</a>
               <div class="login-action-container">
                 <p class="login-action">Create account</p>
                 <p class="login-action">Forgot password?</p>

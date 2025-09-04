@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Productivity Assistant Application</title>
+      <script>
+        (function () {
+          const base = document.createElement('base');
+          base.href = location.hostname.includes('github.io') ? '/productivity-app/' : '/';
+          document.head.insertBefore(base, document.head.firstChild);
+        })();
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="/js/home.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/home.js" defer></script>
+    <script src="js/main.js" defer></script>
 
     <style>
       #home .icon-img {
@@ -23,7 +30,7 @@
       <a href="login.html" id="login" class="icon">
         <div class="icon-img"></div>
       </a>
-      <img src="/images/adhd-logo.svg" alt="logo" class="logo" />
+      <img src="images/adhd-logo.svg" alt="logo" class="logo" />
     </header>
 
       <main>
@@ -53,24 +60,24 @@
     </main>
 
       <nav class="bottom-nav">
-          <a href="home.html" id="home" class="icon" alt="Home icon, press to go to start page">
+          <a href="html/home.html" id="home" class="icon" alt="Home icon, press to go to start page">
             <div class="icon-img"></div>
             <span>Home</span>
           </a>
 
-          <a href="tasks.html" id="tasks" class="icon" alt="Tasks icon, press to go to task page">
+          <a href="html/tasks.html" id="tasks" class="icon" alt="Tasks icon, press to go to task page">
             <div class="icon-img"></div>
             <span>Tasks</span>
           </a>
 
-          <a href="habits.html" class="cta-button"></a>
+          <a href="html/habits.html" class="cta-button"></a>
 
-          <a href="habits.html" id="habits" class="icon" alt="Habits icon, press to go to habits page">
+          <a href="html/habits.html" id="habits" class="icon" alt="Habits icon, press to go to habits page">
             <div class="icon-img"></div>
             <span>Habits</span>
           </a>
 
-          <a href="events.html" id="events" class="icon" alt="Events icon, press to go to event page">
+          <a href="html/events.html" id="events" class="icon" alt="Events icon, press to go to event page">
             <div class="icon-img"></div>
             <span>Events</span> 
       </nav>
