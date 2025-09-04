@@ -219,19 +219,19 @@ document.addEventListener("DOMContentLoaded", function () {
       // add right svg
       const habitIcon = document.getElementById(`habit-icon-${habit.id}`);
       if (habit.category === "Workout") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-workout-hover-black.svg" alt="Workout icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-workout-hover-black.svg" alt="Workout icon" data-id="${habit.id}">`;
       } else if (habit.category === "Study") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-study-big.svg" alt="Study icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-study-big.svg" alt="Study icon" data-id="${habit.id}">`;
       } else if (habit.category === "Clean") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-clean-hover-black.svg" alt="Cleaning icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-clean-hover-black.svg" alt="Cleaning icon" data-id="${habit.id}">`;
       } else if (habit.category === "Gardening") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-plant-hover-black.svg" alt="Gardening icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-plant-hover-black.svg" alt="Gardening icon" data-id="${habit.id}">`;
       } else if (habit.category === "Pet care") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-pet-hover-black.svg" alt="Pet care icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-pet-hover-black.svg" alt="Pet care icon" data-id="${habit.id}">`;
       } else if (habit.category === "Cook") {
-        habitIcon.innerHTML = `<img src="/images/habits/habits-eat-hover-black.svg" alt="Cooking icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habits/habits-eat-hover-black.svg" alt="Cooking icon" data-id="${habit.id}">`;
       } else {
-        habitIcon.innerHTML = `<img src="/images/habit-no-category.svg" alt="Default icon" data-id="${habit.id}">`;
+        habitIcon.innerHTML = `<img src="images/habit-no-category.svg" alt="Default icon" data-id="${habit.id}">`;
       }
       // click icon to show in display mode
       habitIcon.addEventListener("click", () => openPopup(habit, false));
