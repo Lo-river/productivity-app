@@ -1,0 +1,87 @@
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #ddd;
+  background-color: $primary-backgroundcolor;
+}
+
+.bottom-nav .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  width: 40px; 
+}
+
+.bottom-nav .icon .icon-img {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 4px; 
+}
+
+/* Hover-effekt (gör både text och ikon gul vid hover) */
+.bottom-nav .icon:hover {
+  color: #FFBC2C;
+}
+
+/* Gråa (inaktiva) ikoner */
+.bottom-nav #home .icon-img {
+  background-image: url("/images/navbar/home.svg");
+}
+.bottom-nav #tasks .icon-img {
+  background-image: url("/images/navbar/form.svg");
+}
+.bottom-nav #habits .icon-img {
+  background-image: url("/images/navbar/fitness.svg");
+}
+.bottom-nav #events .icon-img {
+  background-image: url("/images/navbar/calender.svg");
+}
+
+/* Hover - byter till gula ikoner */
+.bottom-nav #home:hover .icon-img {
+  background-image: url("/images/navbar/home-hover-yellow.svg");
+}
+.bottom-nav #tasks:hover .icon-img {
+  background-image: url("/images/navbar/form-hover-yellow.svg");
+}
+.bottom-nav #habits:hover .icon-img {
+  background-image: url("/images/navbar/fitness-hover-yellow.svg");
+}
+.bottom-nav #events:hover .icon-img {
+  background-image: url("/images/navbar/calender-hover-yellow.svg");
+}
+
+
+
+
+.bottom-nav .cta-button {
+  background-color: #FFBC2C !important;
+  border-radius: 60%;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  background-image: url("/images/cta-button.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.bottom-nav .cta-button:hover {
+  background-image: url("/images/cta-button-hover.svg");
+}

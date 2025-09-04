@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Productivity Assistant Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/home.js" defer></script>
+    <script src="/js/main.js" defer></script>
+
+    <style>
+      #home .icon-img {
+        background-image: url("/images/navbar/home-hover-yellow.svg") !important;} 
+        #home{color: #FFBC2C !important;}
+   </style>
+
+  </head>
+  <body id="home-body">
+    <div class="wrap-container">
+      
+    <header>
+      <a href="login.html" id="login" class="icon">
+        <div class="icon-img"></div>
+      </a>
+      <img src="/images/adhd-logo.svg" alt="logo" class="logo" />
+    </header>
+
+      <main>
+          <p class="date">Loading date...</p>
+      <!-- Undone Tasks -->
+        <div class="home-container">
+            <section id="recent-tasks" class="home-section">
+              <h2 class="home-h2">Undone Tasks</h2>
+              <div id="recent-tasks-list"></div>
+              <a href="tasks.html" class="view-all-link">View All Tasks</a>   
+            </section>
+
+        <!-- Top Habits -->
+        <section id="top-habits" class="home-section">
+          <h2 class="home-h2">Top Habits</h2>
+          <div id="top-habits-list"></div>
+          <a href="habits.html" class="view-all-link">View All Habits</a>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section id="upcoming-events" class="home-section">
+          <h2 class="home-h2">Upcoming Events</h2>
+          <div id="upcoming-events-list"></div>
+          <a href="events.html" class="view-all-link">View All Events</a>
+        </section>
+        </div>
+    </main>
+
+      <nav class="bottom-nav">
+          <a href="home.html" id="home" class="icon" alt="Home icon, press to go to start page">
+            <div class="icon-img"></div>
+            <span>Home</span>
+          </a>
+
+          <a href="tasks.html" id="tasks" class="icon" alt="Tasks icon, press to go to task page">
+            <div class="icon-img"></div>
+            <span>Tasks</span>
+          </a>
+
+          <a href="habits.html" class="cta-button"></a>
+
+          <a href="habits.html" id="habits" class="icon" alt="Habits icon, press to go to habits page">
+            <div class="icon-img"></div>
+            <span>Habits</span>
+          </a>
+
+          <a href="events.html" id="events" class="icon" alt="Events icon, press to go to event page">
+            <div class="icon-img"></div>
+            <span>Events</span> 
+      </nav>
+    </div>
+  </body>
+</html>

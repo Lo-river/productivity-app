@@ -1,0 +1,438 @@
+#events-body{
+    padding-bottom:80px;
+
+  }
+
+.events-section {
+    margin: 20px;
+    padding: 15px;
+
+    h2 {
+        font-size: 16px;
+        color: lighten($secondary-textcolor, 10%);
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    align-items: center;
+}
+
+// Wrapper-container för att centrera innehållet
+.wrap-container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-bottom: 80px !important;
+            // border: orange solid 5px !important;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+// Datum-styling
+.date {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: $primary-font;
+    color: lighten($secondary-textcolor, 10%);
+    margin-bottom: 5px;
+}
+
+// Huvudrubriken "Events"
+h1 {
+    font-size: 35px;
+    font-family: $primary-font;
+    font-variation-settings: "wght" 400;
+    margin-bottom: 15px;
+}
+
+// Filter & Sortering - Justera placering åt höger
+.filter-sort-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    // padding-right: 55px !important;
+    position: relative;
+    // margin-top: 80px;
+}
+
+.filter-btn, .sort-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #F8F7F4 !important;
+    border: 2px solid #ccc !important;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+    min-width: 80px;
+
+
+    &:hover {
+        background: rgba(255, 188, 44, 0.1) !important;
+    }
+
+    &.active {
+        border-color: #FFBC2C !important;
+        background: rgba(255, 188, 44, 0.1) !important;
+    }
+
+    img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+.filter-btn, .sort-btn {
+    color: #000 !important; /* Försäkrar att texten blir svart på events sidan TA INTE BORT!!*/
+  }
+
+// Justerar filter-menyn
+.filter-menu {
+    display: none;
+    position: absolute;
+    background: #F8F7F4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 100px;
+
+    // Positionera menyn korrekt under knappen
+    top: 100%;
+    left: 47% !important;
+
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s;
+}
+
+// Checkbox-styling
+.filter-menu input[type="checkbox"] {
+    display: none;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    background: url('/images/iconunchecked.svg') no-repeat center;
+    background-size: contain;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .filter-menu input:checked + .checkmark {
+    background: url('/images/iconchecked.svg') no-repeat center;
+    background-size: contain;
+  }
+
+.filter-menu.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+// Stiljusteringar för titeln
+.filter-title {
+    font-size: 14px;
+    color: #7D7D7D;
+    font-weight: 100;
+    margin-bottom: 8px;
+    text-align: left;
+    display: block;
+}
+
+// Anpassa checkbox och text
+.filter-menu label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+// Stil för checkboxarna
+.filter-menu input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 2px solid #B0B0B0 !important;
+    cursor: pointer;
+}
+
+.filter-btn {
+    position: relative;
+}
+
+// Justerar "Upcoming Events" och "Finished Events"
+#events-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.events-section {
+    width: 80% !important;
+    max-width: 400px;
+    margin-bottom: -30px;
+}
+
+.events-section:first-child {
+    margin-top: -35px !important;
+}
+
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $card-backgroundcolor;
+    padding: 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+
+    .event-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3.event-title {
+        font-size: 16px;
+        font-weight: lighter !important;
+        margin: 0;
+    }
+
+    .event-date {
+        font-size: 14px;
+        color: $secondary-textcolor;
+        margin-top: 4px;
+    }
+
+    // Ikoner för redigering och borttagning
+    .event-actions {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+
+        img {
+            width: 20px !important;
+            height: 20px !important;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.finished-event {
+        // background-color: $primary-backgroundcolor;
+        background-color: $primary-backgroundcolor;
+        //background-color:  #f9f9f848 ; //$primary-backgroundcolor:
+       background-color: #eae9e6d7 ; //$card-backgroundcolor:
+
+        h3, p {
+            text-decoration: line-through;
+            color: #7D7D7D;
+        }
+
+    }
+}
+
+// Popup-container för Events
+.event-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+
+    .event-popup-content {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+                gap: 1px !important;
+
+        background: $card-backgroundcolor;
+        padding: 35px;
+        border-radius: 15px;
+        text-align: left;
+        width: 300px;
+        position: relative;
+    }
+
+
+    .event-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 100%;
+        width: 300px;
+
+
+    }
+
+    // Input-fält
+    input, textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        background: #fbfaf7;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #616161;
+
+
+    }
+
+    // Description-fält
+    textarea {
+        height: 80px;
+        resize: none;
+    }
+
+    // Datum-fält
+    .event-due-date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // justify-content: flex-end;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+
+
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 8px;
+            color: #7D7D7D;
+
+        }
+
+        input {
+            border: none;
+            background: #fbfaf7;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #616161;
+
+        }
+    }
+
+
+}
+    #event-view-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+     }
+
+     #event-view-popup .event-popup-content {
+        background: #FBFAF7;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+        width: 320px;
+        position: relative;
+     }
+     #event-view-popup .event-view-close-popup {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+// Anpassning för iPhone 14 Pro Max (430px bredd)
+@media (max-width: 430px) {
+    .wrap-container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+// .event-popup-content .action-buttons {
+//     width: 50%;
+// }
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,18 @@
+# Ignorera kompilationsfiler
+public/css/
+src/main.css
+css/*.map
+css/main.css.map
+
+# Ignorera Node-modules om ni använder npm
+node_modules/
+
+# Ignorera systemfiler
+.DS_Store
+Thumbs.db
+
+# Ignorera VS Code-specifika filer
+.vscode/
+
+# Ignorera allt i en eventuell "dist"-mapp om ni kompilerar något
+/dist/

@@ -1,0 +1,44 @@
+// Huvudfilen som importerar alla SCSS-filer
+
+/* === main.scss === */
+
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/media';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/events';
+@import 'partials/habits';
+@import 'partials/home';
+@import 'partials/index';
+@import 'partials/login';
+@import 'partials/tasks';
+
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+    background-color: $primary-backgroundcolor;
+    color: $primary-textcolor;
+    font-family: $primary-font;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+
+ 
+  

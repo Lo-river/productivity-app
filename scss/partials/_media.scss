@@ -1,0 +1,31 @@
+// La bara in några media queries jag googlade fram här så länge, så kan vi ändra dem sen.
+//Mobile-first Styles (iPhone 14/15 Pro - 393px x 852px)
+
+  /* Tablet (min-width: 600px) */
+@media (min-width: 600px) {
+  header {
+    padding: 20px;
+
+    .logo {
+      width: 60px;
+    }
+
+    .login-icon {
+      width: 35px;
+    }
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .bottom-nav {
+    height: 80px;
+  }
+
+  .cta-button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+

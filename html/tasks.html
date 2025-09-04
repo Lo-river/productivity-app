@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tasks - Productivity Assistant Application</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js" defer></script>
+    <script src="/js/tasks.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    
+    <style>
+      #tasks .icon-img {
+        background-image: url("/images/navbar/form-hover-yellow.svg") !important;}
+      #tasks{color: #FFBC2C !important;}
+    </style>
+  </head>
+  <body class="body-tasks">
+    <div class="wrap-container">
+      <header>
+        <a href="login.html" id="login" class="icon">
+          <div class="icon-img"></div>
+        </a>
+        <img src="/images/adhd-logo.svg" alt="logo" class="logo" />
+      </header>
+
+      <main>
+       <p class="date">Loading date...</p>
+       <h1>TASKS</h1>
+      </main>
+
+      <div class="todo" id="todo" >
+        <div class="overlay"></div>
+        <div class="todo-content">
+
+          <span class="edit-btn"></span>
+          
+
+          <input type="text" class="todo-title" placeholder="To Do Title" disabled/>
+
+        <!-- New input field for adding categories -->
+         <div class="add-category-wrapper">
+          <input type="text" id="add-category-input" placeholder="Enter new category">
+          <button id="add-category-btn">Add Category</button>
+        </div>
+
+        <select id="category-select" class="category-select">
+        <option value="">Select Category</option>
+      </select>
+
+
+
+          <input class="todo-description" placeholder="Enter task description" disabled></input>
+          
+
+          
+          <!-- VISA ENDAST I EDIT MODE EJ KLART  -->
+          <div class="time-estimate"> 
+            <label for="time-estimate"></label>
+            <input type="text" id="time-estimate" class="time-input" placeholder="Enter time estimate" />
+          </div> 
+
+        <!-- VISA ENDAST I VIEW-MODE EJ KLART -->
+        <div class="time-estimate-icon-container">
+          <span class="time-estimate-tooltip">Time Estimate: <span id="time-estimate-text">Not set</span></span>
+        </div>
+          <div class="controls">
+                <div class="task-action-buttons">
+                  <button id="cancel-btn" class="task-action-btn"></button>
+                  <button id="save-btn" class="task-action-btn">Save</button>
+                </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="list-container">
+      <div id="habit-filter-sort-wrapper">
+        <div class="filter-sort-container-tasks">
+          <!--  Filter button -->
+          <button class="dropdown-btn filter-btn" id="filter-btn">
+            Filter <img src="/images/filter-up.svg" alt="Filter icon" />
+          </button>
+
+          <!-- Filter menu -->
+          <div id="filter-menu" class="filter-menu">
+            <span class="filter-title">Filter</span>
+            <label>
+              <input type="checkbox" id="filter-finished" />
+              <span class="checkbox-icon">
+              <img src="/images/iconunchecked.svg" alt="Unchecked" class="checkbox-img" />
+              </span>
+              Finished
+            </label>
+            <label>
+              <input type="checkbox" id="filter-upcoming" />
+              <span class="checkbox-icon">
+                <img src="/images/iconunchecked.svg" alt="Unchecked" class="checkbox-img" />
+              </span>
+              Upcoming
+            </label>
+          </div>
+
+          <!-- Sort button -->
+          <button class="dropdown-btn sort-btn" id="sort-btn">
+            Sort <img src="/images/sort-arrows.svg" alt="Sort icon" />
+          </button>
+      </div>
+      </div>
+      <div class="task-section">
+        <ul id="todo-list" >
+          <li>
+          </li>
+        </ul>
+    </div>
+  </div>
+ 
+      <nav class="bottom-nav">
+        <a href="home.html" id="home" class="icon" alt="Home icon, press to go to start page">
+          <div class="icon-img"></div>
+          <span>Home</span>
+        </a>
+
+        <a href="tasks.html" id="tasks" class="icon" alt="Tasks icon, press to go to task page">
+          <div class="icon-img"></div>
+          <span>Tasks</span>
+        </a>
+
+        <button type="button" class="cta-button" id="cta-btn" alt="Add icon, press to add task, habit and event"></button>
+
+        <a href="habits.html" id="habits" class="icon" alt="Habits icon, press to go to habits page">
+          <div class="icon-img"></div>
+          <span>Habits</span>
+        </a>
+
+        <a href="events.html" id="events" class="icon" alt="Events icon, press to go to event page">
+          <div class="icon-img"></div>
+          <span>Events</span> 
+      </nav>
+    </div> 
+  </body>
+</html>
