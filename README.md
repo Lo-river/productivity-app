@@ -49,23 +49,60 @@ This was a group project focused on **HTML, CSS/SCSS, and JavaScript** – no fr
 
 You can use the app directly in your browser:
 
-[Open Groundly Live](https://lo-river.github.io/productivity-app/)
+
+[Open Groundly Live] 
+<a href="https://lo-river.github.io/productivity-app/" target="_blank">Open Groundly Live</a>
 
 
 ## Folder Structure
 
+```
 /productivity-app
 │
 ├── index.html
+├── .gitignore
+├── .nojekyll
+├── README.md
+│
 ├── css/
-│ └── main.css
-├── js/
-│ └── main.js
+│   └── main.css
+│
+├── html/
+│   ├── events.html
+│   ├── habits.html
+│   ├── home.html
+│   ├── login.html
+│   └── tasks.html
+│
 ├── images/
-│ └── [icons, logos, etc.]
-├── scss/
-│ └── [SCSS files if used]
-└── README.md
+│   ├── favicon/
+│   ├── habits/
+│   ├── navbar/
+│   └── [other image files]
+│
+├── js/
+│   ├── events.js
+│   ├── habits.js
+│   ├── home.js
+│   ├── index.js
+│   ├── login.js
+│   ├── main.js
+│   └── tasks.js
+│
+└── scss/
+    └── partials/
+        ├── _events.scss
+        ├── _footer.scss
+        ├── _habits.scss
+        ├── _header.scss
+        ├── _home.scss
+        ├── _index.scss
+        ├── _login.scss
+        ├── _media.scss
+        ├── _mixins.scss
+        ├── _tasks.scss
+        └── _variables.scss
+```
 
 
 ## How to Run Locally
