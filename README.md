@@ -42,8 +42,8 @@ This was a group project focused on **HTML, CSS/SCSS, and JavaScript** – no fr
 ## Screenshots
 
 
-![Groundly Screenshot](./images/groundly-screenshot-1.png)
-![Groundly Screenshot](./images/groundly-screenshot-2.png)
+
+![Groundly Screenshot](./images/groundly-screenshot-3.png)
 
 ## Try it Yourself
 
